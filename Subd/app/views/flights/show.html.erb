@@ -1,0 +1,42 @@
+<div class="panel panel-primary">	
+	<p id="notice", class="panel-heading"><%= notice %></p>
+
+	<div class="panel-body"
+		<p>
+		  <strong>Departure:</strong>
+		  <%= @flight.departure %>
+		</p>
+
+		<p>
+		  <strong>Arrival:</strong>
+		  <%= @flight.arrival %>
+		</p>
+
+		<p>
+		  <strong>Departure point:</strong>
+		  <%= @flight.departure_point %>
+		</p>
+
+		<p>
+		  <strong>Arrival point:</strong>
+		  <%= @flight.arrival_point %>
+		</p>
+	</div>
+
+	<div class="panel-footer">
+		<%= link_to 'Edit', 
+			edit_flight_path(@flight),
+			:class => "btn btn-primary" 
+		%>
+		<%= link_to 'Back', 
+			flights_path,
+			:class => "btn btn-primary"  
+		%>
+		<%= link_to 'Destroy', 
+			@flight, 
+			method: :delete, 
+			data: { confirm: 'Are you sure?' },
+			:class => "btn btn-danger"  
+		%>
+	</div>
+</div>

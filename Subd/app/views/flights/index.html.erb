@@ -1,0 +1,36 @@
+<h1 class="header">Flights</h1>
+
+<%= link_to 'New Flight', 
+    new_flight_path, 
+    :class => "btn btn-primary" 
+%><br><br>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Departure</th>
+      <th>Arrival</th>
+      <th>Departure point</th>
+      <th>Arrival point</th>
+      <th>More</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @flights.each do |flight| %>
+      <tr>
+        <td><%= flight.departure %></td>
+        <td><%= flight.arrival%></td>
+        <td><%= flight.departure_point %></td>
+        <td><%= flight.arrival_point %></td>
+        <td><%= link_to 'Show', 
+                flight, 
+                :class => "btn btn-primary" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

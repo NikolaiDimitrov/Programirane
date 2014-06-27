@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  destination: MyString
+  departure: 2014-06-07 09:06:34
+  arrival: 2014-06-07 09:06:34
+  departure_point: MyString
+  arrival_point: MyString
+
+two:
+  destination: MyString
+  departure: 2014-06-07 09:06:34
+  arrival: 2014-06-07 09:06:34
+  departure_point: MyString
+  arrival_point: MyString
